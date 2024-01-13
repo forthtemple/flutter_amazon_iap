@@ -525,8 +525,8 @@ public class Pigeon {
 
     public void setRequestStatus(@NonNull RequestStatus setterArg) {
       if (setterArg == null) {
-        ///throw new IllegalStateException("Nonnull field \"requestStatus\" is null.");
-        setterArg="0";
+        throw new IllegalStateException("Nonnull field \"requestStatus\" is null.");
+       // setterArg="0";
       }
       this.requestStatus = setterArg;
     }
@@ -657,7 +657,8 @@ public class Pigeon {
 
     public void setPrice(@NonNull String setterArg) {
       if (setterArg == null) {
-        throw new IllegalStateException("Nonnull field \"price\" is null.");
+       // throw new IllegalStateException("Nonnull field \"price\" is null.");
+        setterArg="0";
       }
       this.price = setterArg;
     }
